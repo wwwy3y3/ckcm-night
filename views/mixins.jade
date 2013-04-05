@@ -1,0 +1,21 @@
+mixin block(head, text, fb, src)
+    div.media
+        a.pull-left
+            img(src= src, width="250px", height="250px")
+        div.media-body
+            h2.media-heading #{head}
+            p #{text}
+            ul.link
+                li
+                    a(href= fb)
+                        img(src="/images/fb.png", width="20px", height="20px")
+
+mixin person(head, text, fb)
+    div.media
+        div.media-body
+            h2.media-heading #{head}
+            p #{text}
+            ul.link
+                li
+                    a(href= fb)
+                        img(src="/images/fb.png", width="20px", height="20px")

@@ -1,5 +1,7 @@
 extends layout
 
+include mixins
+
 block content
-  h1= title
-  p Welcome to #{title}
+    div.container
+        mixin block("丁興毅", "成大瘤愆", "https://www.facebook.com/jack.ting.33", "/images/jt.jpg")

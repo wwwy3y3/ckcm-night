@@ -1,19 +1,10 @@
 extends layout
 
-mixin block(head, text, fb, src)
-    div.media
-        a.pull-left
-            img(src= src, width="150px", height="150px")
-        div.media-body
-            h2.media-heading #{head}
-            p #{text}
-            ul.link
-                li
-                    a(href= fb)
-                        img(src="/images/fb-icon.png")
+include mixins
 
 
 block content
   div.container
-    mixin block("N&M Studio" ,"thank you", "#", "/images/n&m.jpg")
+    -var nmstr= "N&M Studio為成大學生自組之獨立製片團隊，2010年5月成立至今，目前人員約20人上下，以「細膩、堅持、執著」六字為團隊創作精神。";
+    mixin block("N&M Studio" ,nmstr, "#", "/images/n&m.jpg")
     mixin block("板橋人樂團" ,"thank you", "#", "/images/band.jpg")

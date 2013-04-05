@@ -26,11 +26,21 @@ a:link, a:active, a:visited {
   -moz-box-shadow: @arguments;
   box-shadow: @arguments;
 }
+//fonts
+@font-face {
+  font-family: "AlexBrush";
+  src: url("/fonts/AlexBrush-Regular-OTF.otf");
+}
 
+@font-face {
+  font-family: "AlmendraSC-Regular";
+  src: url("/fonts/AlmendraSC-Regular.otf");
+}
 //
 
 body {
-  background: url("/images/carbon_fibre.png") repeat;
+  background: url("/images/debut_dark.png") repeat;
+  color: white;
 }
 
 .logo {
@@ -42,12 +52,29 @@ body {
   padding-bottom: 25px;
 }
 
+.navbar {
+  margin-bottom: 50px;
+}
+
+.navbar .nav>li>a {
+  text-shadow: none;
+  color: #A8A39D;
+  &:hover {
+    color: white;
+  };
+}
+
 .navbar-inner {
   padding: 20px;
   border: none;
-  background: transparent;
-  background-color: #fff;
-  background-color: rgba(255,255,255,1);
+  //background: transparent;
+  background: url("/images/debut_dark.png") repeat;
+  .box-shadow (none);
+  //background-color: rgba(255,255,255,1);
+}
+
+.navbar-static-top .navbar-inner {
+  .box-shadow (none);
 }
 
 .navbar .nav {
@@ -56,6 +83,10 @@ body {
   left: 0;
   display: block;
   margin: 0 10px 0 0;
+  
+  a {
+    color: white;
+  }
 }
 
 .container:after {
@@ -65,29 +96,74 @@ clear: both;
 //
 
 .media:first-child {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .media {
   position: relative;
-  margin-top: 100px;
-  color: white;
+  margin-top: 50px;
+  color: #C9C9C9;//#E2DDD9;
+  background-color: fadeout(black, 95%);//#303030;
+  padding: 20px;
+
+  img {
+   // border: 2px solid black;
+  }
   .link {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     list-style: none;
+  }
+
+  .media-heading {
+    color: #FEEECC;
+    font-weight: normal;
+    font-family: "微軟正黑體"
   }
 
   .media-body {
     padding-left: 20px;
+    font-size: 18px;
+  }
+
+  .border-radius;
+}
+
+//contacts
+.main{
+  margin-top: 20px;
+  color: #C9C9C9;//#E2DDD9;
+  background-color: fadeout(black, 95%);//#303030;
+  padding: 20px;
+
+  .border-radius;
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  h5,
+  ul{
+    margin-left: 20px;
+  }
+
+  span {
+    margin-right: 10px;
+    color: #3b5998;
+    font-weight: bold;
+  }
+
+  a {
+    color: #A80000;
   }
 }
 
 //footer
 
 footer {
-  position: absolute;
-  bottom: 0;
+  //position: absolute;
+  //bottom: 0;
   color: white;
 
   ul{

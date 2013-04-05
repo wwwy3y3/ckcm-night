@@ -1,5 +1,5 @@
 mixin header-li(href, title)
-    -if(nav===href || (nav==="index" && href===""))
+    -if(nav===href)
         li.active
             a(href="/#{href}")= title
     -else
@@ -21,10 +21,10 @@ html
     header.navbar.navbar-static-top
         div.navbar-inner
             div.container
-                a.brand(href="#") LOGO
+                a.brand(href="/")  LOGO
+                    //img(src="/images/logo.jpg")
                 div.nav-collapse.collapse
                     ul.nav.nav-pills
-                        mixin header-li("", "首頁")
                         mixin header-li("actors", "劇組名單")
                         mixin header-li("guests", "特別來賓")
                         mixin header-li("compaign", "宣傳")
@@ -32,7 +32,7 @@ html
                         mixin header-li("specialthx", "特別感謝")
                         mixin header-li("contacts", "聯絡我們")
     block content
-    footer
+    //footer
         div.container
             ul
                 li 
