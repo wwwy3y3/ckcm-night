@@ -30,7 +30,7 @@ a:link, a:active, a:visited {
 //
 
 body {
-  background-color: #333333;
+  background: url("/images/carbon_fibre.png") repeat;
 }
 
 .logo {
@@ -60,4 +60,50 @@ body {
 
 .container:after {
 clear: both;
+}
+
+//
+
+.media:first-child {
+  margin-top: 100px;
+}
+
+.media {
+  position: relative;
+  margin-top: 100px;
+  color: white;
+  .link {
+    position: absolute;
+    bottom: 0;
+    list-style: none;
+  }
+
+  .media-body {
+    padding-left: 20px;
+  }
+}
+
+//footer
+
+footer {
+  position: absolute;
+  bottom: 0;
+  color: white;
+
+  ul{
+    list-style: none;
+    li {
+      float: left;
+    }
+
+    li a{
+      display: block;
+      margin: 5px;
+      color: white;
+
+      &:hover{
+        color: white;
+      }
+    }
+  }
 }

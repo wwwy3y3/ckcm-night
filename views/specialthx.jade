@@ -1,5 +1,19 @@
 extends layout
 
+mixin block(head, text, fb, src)
+    div.media
+        a.pull-left
+            img(src= src, width="150px", height="150px")
+        div.media-body
+            h2.media-heading #{head}
+            p #{text}
+            ul.link
+                li
+                    a(href= fb)
+                        img(src="/images/fb-icon.png")
+
+
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container
+    mixin block("N&M Studio" ,"thank you", "#", "/images/n&m.jpg")
+    mixin block("板橋人樂團" ,"thank you", "#", "/images/band.jpg")

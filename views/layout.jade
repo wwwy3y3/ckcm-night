@@ -1,3 +1,11 @@
+mixin header-li(href, title)
+    -if(nav===href || (nav==="index" && href===""))
+        li.active
+            a(href="/#{href}")= title
+    -else
+        li
+            a(href= "/#{href}")= title
+
 doctype 5
 html
   head
@@ -10,24 +18,25 @@ html
     block script
 
   body
-    header.navbar.navbar-fixed-top
+    header.navbar.navbar-static-top
         div.navbar-inner
             div.container
                 a.brand(href="#") LOGO
                 div.nav-collapse.collapse
                     ul.nav.nav-pills
-                        li.active
-                            a(href="#") Home
-                        li
-                            a(href="#") 劇組名單
-                        li
-                            a(href="#") 特別來賓
-                        li
-                            a(href="#") 宣傳
-                        li
-                            a(href="#") 特別感謝
-                        li
-                            a(href="#") 贊助廠商
-                        li
-                            a(href="#") 聯絡我們
+                        mixin header-li("", "首頁")
+                        mixin header-li("actors", "劇組名單")
+                        mixin header-li("guests", "特別來賓")
+                        mixin header-li("compaign", "宣傳")
+                        mixin header-li("sponsors", "贊助廠商")
+                        mixin header-li("specialthx", "特別感謝")
+                        mixin header-li("contacts", "聯絡我們")
     block content
+    footer
+        div.container
+            ul
+                li 
+                    a(href="#") 成大成景會
+
+                li 
+                    a(href="#") made by wwwy3y3
