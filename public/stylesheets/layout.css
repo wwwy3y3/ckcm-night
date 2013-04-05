@@ -1,0 +1,8 @@
+*{margin:0;padding:0;}
+img{border:none;}
+a:link,a:active,a:visited{text-decoration:none;}
+body{background-color:#333333;}
+.logo{display:block;float:left;padding:10px 20px 10px;height:100px;padding-top:25px;padding-bottom:25px;}
+.navbar-inner{padding:20px;border:none;background:transparent;background-color:#fff;background-color:#ffffff;}
+.navbar .nav{float:right;position:relative;left:0;display:block;margin:0 10px 0 0;}
+.container:after{clear:both;}

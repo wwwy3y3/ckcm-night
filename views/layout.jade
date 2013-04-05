@@ -1,0 +1,33 @@
+doctype 5
+html
+  head
+    title= title
+    <!-- Bootstrap -->
+    link(href="bootstrap/css/bootstrap.min.css", rel="stylesheet", media="screen")
+    script(src="http://code.jquery.com/jquery.js")
+    script(src="bootstrap/js/bootstrap.min.js")
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+    block script
+
+  body
+    header.navbar.navbar-fixed-top
+        div.navbar-inner
+            div.container
+                a.brand(href="#") LOGO
+                div.nav-collapse.collapse
+                    ul.nav.nav-pills
+                        li.active
+                            a(href="#") Home
+                        li
+                            a(href="#") 劇組名單
+                        li
+                            a(href="#") 特別來賓
+                        li
+                            a(href="#") 宣傳
+                        li
+                            a(href="#") 特別感謝
+                        li
+                            a(href="#") 贊助廠商
+                        li
+                            a(href="#") 聯絡我們
+    block content
