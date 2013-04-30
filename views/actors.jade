@@ -1,5 +1,69 @@
 extends layout
 
+mixin actorList( name, href, src)
+    li
+        img(src= src)
+        a(href= href) #{name}
+
+block script
+    link(rel='stylesheet', href='/stylesheets/actors.css')
+
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container
+    div.drama
+        h3 Comedy
+        div.pic-frame
+            img.drama-pic(src="/images/comedy.jpg")
+        div.side-bar
+            ul  
+                -var baseURL= "https://www.facebook.com/";
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+        div(style='clear:both')
+
+    div.drama
+        h3 Susepence Drama
+        div.pic-frame
+            img.drama-pic(src="/images/carousel2.jpg")
+        div.side-bar
+            ul  
+                -var baseURL= "https://www.facebook.com/";
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+        div(style='clear:both')
+
+    div.drama
+        h3 Love Story
+        div.pic-frame
+            img.drama-pic(src="/images/carousel1.jpg")
+        div.side-bar
+            ul  
+                -var baseURL= "https://www.facebook.com/";
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+                mixin actorList("李璉昀", "https://www.facebook.com/profile.php?id=100000453906792", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c279.0.458.458/s100x100/66533_505384879486638_193016762_n.jpg")
+                mixin actorList("邱建緯", baseURL+"vincent.chiu.3150", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c12.12.156.156/s100x100/73368_634220903260896_353653953_a.jpg")
+        div(style='clear:both')
+                

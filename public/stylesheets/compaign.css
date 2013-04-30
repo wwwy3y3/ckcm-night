@@ -1,0 +1,8 @@
+*{margin:0;padding:0;}
+img{border:none;}
+a:link,a:active,a:visited{text-decoration:none;}
+@font-face{font-family:"AlexBrush";src:url("/fonts/AlexBrush-Regular-OTF.otf");}@font-face{font-family:"AlmendraSC-Regular";src:url("/fonts/AlmendraSC-Regular.otf");}.block{width:600px;background-color:rgba(0, 0, 0, 0.30000000000000004);padding:5px 20px 20px 20px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin:50px 0;}.block .pic-frame{float:left;}.block .pic-frame img{width:300px;}
+.block .side-bar{float:left;margin-left:10px;}.block .side-bar img{width:30px;height:30px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.block .side-bar ul{margin:0;}.block .side-bar ul a{display:inline-block;height:30px;width:60px;margin-bottom:3px;}
+.block .side-bar li{list-style:none;}
+.block .drama-pic{width:800px;}

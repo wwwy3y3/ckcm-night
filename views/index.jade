@@ -2,38 +2,48 @@ extends layout
 
 block script
     link(rel='stylesheet', href='/stylesheets/index.css')
+    script
+        $(document).ready(function(){
+            $('.carousel').carousel({
+              interval: 5000
+            });
+          });
 
 block content
-    div.container
-        h1.title Mr Dreamer
-        div#myCarousel.carousel.slide
-            div.carousel-inner
-                div.active.item
-                    img(src="/images/carousel1.jpg")
-                    div.container
-                        //div.carousel-caption
-                            h1 Mr Dreamer
-                            p.lead Dare to dream. You are not the only one
+    //h1.title Mr Dreamer
+    div#myCarousel.carousel.slide
+        div.carousel-inner
+            div.active.item
+                img(src="/images/carousel1.jpg")
+                div.container
+                    div.carousel-caption
+                        h1 Mr Dreamer
+                        p.lead Dare to dream. You are not the only one
+                        div.fb-like(data-send="false", data-width="450", data-show-faces="true")
 
-                div.item
-                    img(src="/images/carousel2.jpg")
-                    div.container
-                        //div.carousel-caption
-                            h1 Mr Dreamer
-                            p.lead Dare to dream. You are not the only one
+            div.item
+                img(src="/images/carousel2.jpg")
+                div.container
+                    div.carousel-caption
+                        h1 Mr Dreamer
+                        p.lead Dare to dream. You are not the only one
+                        div.fb-like(data-send="false", data-width="450", data-show-faces="true")
 
-                div.item
-                    img(src="/images/carousel3.jpg")
-                    div.container
-                        //div.carousel-caption
-                            h1 Mr Dreamer
-                            p.lead Dare to dream. You are not the only one
-            a.left.carousel-control(href="#myCarousel", data-slide="prev") &lsaquo;
-            a.right.carousel-control(href="#myCarousel", data-slide="next") &rsaquo;
-        div.secondary
-            div.container
-                h2.sentence Dare to dream. You are not the only one
-                button.btn.btn-inverse
-                    a(href="#") Facebook
+
+            div.item
+                img(src="/images/carousel3.jpeg")
+                div.container
+                    div.carousel-caption
+                        h1 Mr Dreamer
+                        p.lead Dare to dream. You are not the only one
+                        div.fb-like(data-send="false", data-width="450", data-show-faces="true")
+
+        a.left.carousel-control(href="#myCarousel", data-slide="prev") &lsaquo;
+        a.right.carousel-control(href="#myCarousel", data-slide="next") &rsaquo;
+    //div.secondary
+        div.container
+            h2.sentence Dare to dream. You are not the only one
+            button.btn.btn-inverse
+                a(href="#") Facebook
 
   
