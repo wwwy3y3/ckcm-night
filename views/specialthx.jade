@@ -5,6 +5,40 @@ include mixins
 
 block content
   div.container
-    -var nmstr= "N&M Studio為成大學生自組之獨立製片團隊，2010年5月成立至今，目前人員約20人上下，以「細膩、堅持、執著」六字為團隊創作精神。";
-    mixin block("N&M Studio" ,nmstr, "#", "/images/n&m.jpg")
-    mixin block("板橋人樂團" ,"thank you", "#", "/images/band.jpg")
+    //-var nmstr= "N&M Studio為成大學生自組之獨立製片團隊，2010年5月成立至今，目前人員約20人上下，以「細膩、堅持、執著」六字為團隊創作精神。";
+    //mixin block("N&M Studio" ,nmstr, "#", "/images/n&m.jpg")
+    //mixin block("板橋人樂團" ,"thank you", "#", "/images/band.jpg")
+    div.media
+        a.pull-left
+            img(src= '/images/person1.jpg', width="250px", height="250px")
+        div.media-body
+            h2.media-heading 劉彥醇
+            p 特別感謝劉彥醇同學幫2013成景之夜題字!
+            p 中區國稅局書法比賽學生組第二名
+            p 淡江大學全國大專院校學生書法比賽第一名
+            p 紫竹盃書法比賽大專組第一名
+            p 全國觀音盃大專組第二名
+
+            ul.link
+                li
+                    a(href= 'https://www.facebook.com/yengchung')
+                        img(src="/images/fb.png", width="20px", height="20px")
+
+    div.media
+        a.pull-left
+            img(src= '/images/person2.jpg', width="250px", height="250px")
+        div.media-body
+            h2.media-heading 林羿宏
+            p 特別感謝成大攝影社長幫我們拍攝一系列劇照!
+            p 2011 年成大攝影社社長
+            p 2011、2012年成大畢業典禮攝影
+            p 2011年CIP Symposium攝影
+            p 2012年成大畢業演唱會攝影
+            p 2012年台南曙光舞團隨團攝影
+            p 2012年成大第一屆社研營攝影
+            p 2012年ABC Symposium、PCGMR攝影
+
+            ul.link
+                li
+                    a(href= 'https://www.facebook.com/profile.php?id=100000784712059')
+                        img(src="/images/fb.png", width="20px", height="20px")

@@ -2,13 +2,48 @@ extends layout
 
 block script
     link(rel='stylesheet', href='/stylesheets/compaign.css')
+    script(src='/javascripts/jquery.masonry.min.js')
+    script
+        var $container = $('.container');
+        $container.imagesLoaded( function(){
+          $container.masonry({
+            itemSelector : '.item',
+            columnWidth: 240
+          });
+        });
+
 
 block content
   div.container
-    //div.block
-        div.pic-frame
-            img(src= '/images/poster1.jpg')
-        div.side-bar
-            p sfkekj
-        div(style='clear:both')
+    div.item2
+        img(src='/images/mrdreamer.gif')
+
+    div.item1
+        p 曾經
+        p 我相信如幻般的夢想
+        p 但相信並非代表永恆
+        p 夢裂了 碎了 散落了
+        p 只能望著它們
+        p 望著空靈的世界
+        p 等著被無情社會吞噬
+        p 直到這一夜
+        p 他們告訴我
+        p Dare to dream. You are not the only one.
+        p 夢被他 被她 被他們拾起
+        p 碎裂過的希冀 逐漸被擁抱縫合
+        p 而修補成交織著勇氣的網
+        p 網向未來
+        p 而混沌獲得解放
+        p 成功也開始茁壯
+        br
+        p 我是夢想先生
+        p 讓我帶你，一起品嘗
+        p 拾回夢的甜美滋味
+        p ---------------------------------------
+        p 2013。成大成景之夜
+        p 5/19(日) 光復校區成功廳 
+        p 6:00進場
+        p 6:30夢想啟程 
+
+
 

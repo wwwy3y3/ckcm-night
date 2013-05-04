@@ -24,7 +24,11 @@
   width: 100%;
 }
 
-.carousel img {
+.carousel #poster {
+  margin-top: -80px;
+}
+
+.carousel .item > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -32,6 +36,7 @@
 }
 
 .carousel-caption {
+  position: relative;
   background-color: fadeout(white, 50%);
   position: static;
   width: 100%;
@@ -47,6 +52,15 @@
 }
 .carousel-caption .btn {
   margin-top: 10px;
+}
+
+.fb-share {
+  width: 80px;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  background-color: transparent;
+  border: none;
 }
 
 //
