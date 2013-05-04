@@ -7,6 +7,11 @@ block script
             $('.carousel').carousel({
               interval: 5000
             });
+
+            
+            $('.navbar').height($(window).height()*0.15);
+            var remainHeight= $(window).height()-$('header').height();
+            $('.carousel').find('.item').height(remainHeight);
           });
 
 block content
@@ -14,7 +19,7 @@ block content
     div#myCarousel.carousel.slide
         div.carousel-inner
             div.active.item
-                img(src="/images/carousel1.jpg")
+                img(src="/images/lovestory.jpg")
                 div.container
                     div.carousel-caption
                         h1 Mr Dreamer
@@ -22,7 +27,7 @@ block content
                         //div.fb-like(data-send="false", data-width="450", data-show-faces="true")
 
             div.item
-                img(src="/images/carousel2.jpg")
+                img(src="/images/suspensedrama.jpg")
                 div.container
                     div.carousel-caption
                         h1 Mr Dreamer
@@ -31,7 +36,7 @@ block content
 
 
             div.item
-                img(src="/images/carousel3.jpeg")
+                img(src="/images/poster.jpg")
                 div.container
                     div.carousel-caption
                         h1 Mr Dreamer

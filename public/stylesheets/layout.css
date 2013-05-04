@@ -2,10 +2,10 @@
 img{border:none;}
 a:link,a:active,a:visited{text-decoration:none;}
 @font-face{font-family:"AlexBrush";src:url("/fonts/AlexBrush-Regular-OTF.otf");}@font-face{font-family:"AlmendraSC-Regular";src:url("/fonts/AlmendraSC-Regular.otf");}body{background:url("/images/debut_dark.png") repeat;color:white;}
-.logo{display:block;float:left;padding:10px 20px 10px;height:100px;padding-top:25px;padding-bottom:25px;}
-.navbar{height:20%;}
+.brand{float:left;}.brand img{margin-top:-30px;}
+.navbar{height:auto;}
 .navbar .nav>li>a{text-shadow:none;color:#A8A39D;}.navbar .nav>li>a:hover{color:white;}
-.navbar-inner{padding:20px;border:none;background:url("/images/debut_dark.png") repeat;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+.navbar-inner{height:auto;padding:20px;border:none;background:url("/images/debut_dark.png") repeat;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 .navbar-static-top .navbar-inner{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 .navbar .nav{float:right;position:relative;left:0;display:block;margin:0 10px 0 0;}.navbar .nav a{color:white;}
 .container:after{clear:both;}
