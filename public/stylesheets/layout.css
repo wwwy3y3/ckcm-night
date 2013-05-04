@@ -2,13 +2,13 @@
 img{border:none;}
 a:link,a:active,a:visited{text-decoration:none;}
 @font-face{font-family:"AlexBrush";src:url("/fonts/AlexBrush-Regular-OTF.otf");}@font-face{font-family:"AlmendraSC-Regular";src:url("/fonts/AlmendraSC-Regular.otf");}body{background:url("/images/debut_dark.png") repeat;color:white;}
-.navbar .brand{margin-left:-60px;}
-.brand{float:left;}.brand img{width:250px;margin-top:-40px;}
+.navbar .brand{margin-left:-140px;}
+.brand{float:left;}.brand img{width:250px;margin-top:-30px;}
 .navbar{height:120px;}
 .navbar .nav>li>a{text-shadow:none;color:#A8A39D;}.navbar .nav>li>a:hover{color:white;}
 .navbar-inner{height:auto;padding:20px;border:none;background:url("/images/debut_dark.png") repeat;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 .navbar-static-top .navbar-inner{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
-.navbar .nav{float:right;position:relative;left:0;display:block;margin:20px 10px 0 0;font-size:18px;}.navbar .nav a{color:white;}
+.navbar .nav{float:right;position:relative;left:0;display:block;margin:20px 0 0 0;font-size:18px;}.navbar .nav a{color:white;margin-right:10px;}
 .container:after{clear:both;}
 .media:first-child{margin-top:50px;}
 .media{position:relative;margin-top:50px;color:#C9C9C9;background-color:rgba(0, 0, 0, 0.050000000000000044);padding:20px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
