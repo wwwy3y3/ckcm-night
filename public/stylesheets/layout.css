@@ -3,7 +3,7 @@ img{border:none;}
 a:link,a:active,a:visited{text-decoration:none;}
 @font-face{font-family:"AlexBrush";src:url("/fonts/AlexBrush-Regular-OTF.otf");}@font-face{font-family:"AlmendraSC-Regular";src:url("/fonts/AlmendraSC-Regular.otf");}body{background:url("/images/debut_dark.png") repeat;color:white;}
 .brand{float:left;}.brand img{margin-top:-30px;}
-.navbar{height:auto;}
+.navbar{height:120px;}
 .navbar .nav>li>a{text-shadow:none;color:#A8A39D;}.navbar .nav>li>a:hover{color:white;}
 .navbar-inner{height:auto;padding:20px;border:none;background:url("/images/debut_dark.png") repeat;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 .navbar-static-top .navbar-inner{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
