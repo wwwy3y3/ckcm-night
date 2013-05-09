@@ -12,7 +12,7 @@ a:link,a:active,a:visited{text-decoration:none;}
 .container:after{clear:both;}
 .media:first-child{margin-top:50px;}
 .media{position:relative;margin-top:50px;color:#C9C9C9;background-color:rgba(0, 0, 0, 0.050000000000000044);padding:20px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
-.media .link{position:absolute;bottom:20px;list-style:none;}
+.media .link{list-style:none;}
 .media .media-heading{color:#FEEECC;font-weight:normal;font-family:"微軟正黑體";}
 .media .media-body{padding-left:20px;font-size:18px;}
 .main{margin-top:20px;color:#C9C9C9;background-color:rgba(0, 0, 0, 0.050000000000000044);padding:20px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}.main ul{list-style:none;margin:0;}
