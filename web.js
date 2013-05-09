@@ -44,6 +44,7 @@ app.get('/actors', routes.actors);
 app.get('/guests', routes.guests);
 app.get('/sponsors', routes.sponsors);
 app.get('/compaign', routes.compaign);
+app.get('/comments', routes.comments);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

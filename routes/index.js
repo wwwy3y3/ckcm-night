@@ -30,3 +30,7 @@ exports.sponsors = function(req, res){
 exports.compaign = function(req, res){
   res.render('compaign', { title: '宣傳', nav: 'compaign' });
 };
+
+exports.comments = function(req, res){
+  res.render('comment', { title: '留言', nav: 'comments' });
+};

@@ -8,7 +8,7 @@ a:link,a:active,a:visited{text-decoration:none;}
 .navbar .nav>li>a{text-shadow:none;color:#A8A39D;}.navbar .nav>li>a:hover{color:white;}
 .navbar-inner{height:auto;padding:20px;border:none;background:url("/images/debut_dark.png") repeat;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 .navbar-static-top .navbar-inner{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
-.navbar .nav{float:right;position:relative;left:0;display:block;margin:20px 0 0 0;font-size:18px;}.navbar .nav a{color:white;margin-right:10px;}
+.navbar .nav{float:right;position:relative;left:0;display:block;margin:30px 0 0 0;font-size:18px;}.navbar .nav a{color:white;}
 .container:after{clear:both;}
 .media:first-child{margin-top:50px;}
 .media{position:relative;margin-top:50px;color:#C9C9C9;background-color:rgba(0, 0, 0, 0.050000000000000044);padding:20px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
@@ -19,5 +19,6 @@ a:link,a:active,a:visited{text-decoration:none;}
 .main h5,.main ul{margin-left:20px;}
 .main span{margin-right:10px;color:#3b5998;font-weight:bold;}
 .main a{color:#A80000;}
-footer{color:white;}footer ul{list-style:none;}footer ul li{float:left;}
-footer ul li a{display:block;margin:5px;color:white;}footer ul li a:hover{color:white;}
+.fb-comments{margin-top:50px;margin-left:250px;}
+footer{background-color:rgba(0, 0, 0, 0.09999999999999998);-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin:100px 0 50px 0;padding:20px;color:white;}footer ul{list-style:none;}footer ul li{float:left;}
+footer ul li a,footer ul li span{display:block;margin:5px;color:white;}footer ul li a:hover,footer ul li span:hover{color:white;}
