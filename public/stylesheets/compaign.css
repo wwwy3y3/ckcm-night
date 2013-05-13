@@ -6,6 +6,8 @@ a:link,a:active,a:visited{text-decoration:none;}
 .block .side-bar ul{margin:0;}.block .side-bar ul a{display:inline-block;height:30px;width:60px;margin-bottom:3px;}
 .block .side-bar li{list-style:none;}
 .block .drama-pic{width:800px;}
+.item0{width:660px;margin:10px;float:left;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:10px;background-color:rgba(0, 0, 0, 0.19999999999999996);}
 .item1{width:220px;margin:10px;float:left;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:10px;background-color:rgba(0, 0, 0, 0.19999999999999996);}
 .item2{width:440px;margin:10px;float:left;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:10px;background-color:rgba(0, 0, 0, 0.19999999999999996);}
 .item3{width:600px;margin:10px;float:left;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:10px;background-color:rgba(0, 0, 0, 0.19999999999999996);}
+.item4{width:380px;margin:10px;float:left;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:10px;background-color:rgba(0, 0, 0, 0.19999999999999996);}
